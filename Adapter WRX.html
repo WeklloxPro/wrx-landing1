@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WRX USLUGI - Вход в чат</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1a1c28, #2d3250);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .telegram-container {
+            width: 100%;
+            max-width: 420px;
+            background: #17212b;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+            border: 1px solid #2f3d4e;
+            animation: fadeIn 0.6s ease-out;
+        }
+        
+        .header {
+            background: #202b36;
+            padding: 28px 25px 20px;
+            text-align: center;
+            border-bottom: 1px solid #2a3a4d;
+        }
+        
+        .logo {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #7e57c2, #5e35b1);
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            color: white;
+            font-weight: 700;
+            box-shadow: 0 5px 15px rgba(126, 87, 194, 0.4);
+        }
+        
+        h1 {
+            color: #e1e9f0;
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+        
+        .subtitle {
+            color: #8a9aa8;
+            font-size: 16px;
+            margin-top: 8px;
+        }
+        
+        .content {
+            padding: 30px 25px;
+        }
+        
+        .description {
+            background: #202b36;
+            border-radius: 14px;
+            padding: 25px;
+            margin-bottom: 30px;
+            border: 1px solid #2a3a4d;
+            text-align: center;
+        }
+        
+        .description p {
+            color: #c5d0de;
+            font-size: 18px;
+            line-height: 1.6;
+            font-weight: 500;
+        }
+        
+        .highlight {
+            color: #7e57c2;
+            font-weight: 700;
+        }
+        
+        .join-button {
+            display: block;
+            width: 100%;
+            padding: 18px;
+            background: linear-gradient(to right, #7e57c2, #5e35b1);
+            color: white;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 700;
+            border-radius: 12px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            letter-spacing: 0.5px;
+            box-shadow: 0 5px 15px rgba(126, 87, 194, 0.4);
+        }
+        
+        .join-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(126, 87, 194, 0.6);
+            background: linear-gradient(to right, #8d6bc9, #6a45c0);
+        }
+        
+        .join-button:active {
+            transform: translateY(1px);
+        }
+        
+        .animation {
+            text-align: center;
+            margin: 25px 0;
+        }
+        
+        .pulse {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background: #7e57c2;
+            border-radius: 50%;
+            margin: 0 4px;
+            animation: pulse 1.5s infinite;
+        }
+        
+        .pulse:nth-child(2) {
+            animation-delay: 0.3s;
+        }
+        
+        .pulse:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.3); opacity: 0.7; }
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #5d7a94;
+            font-size: 14px;
+            border-top: 1px solid #2a3a4d;
+            background: #202b36;
+        }
+    </style>
+</head>
+<body>
+    <div class="telegram-container">
+        <div class="header">
+            <div class="logo">WRX</div>
+            <h1>WRX USLUGI</h1>
+            <div class="subtitle">Премиум чат-сообщество</div>
+        </div>
+        
+        <div class="content">
+            <div class="description">
+                <p>Заходи скорей для <span class="highlight">крутого общения</span> и эксклюзивных возможностей!</p>
+            </div>
+            
+            <div class="animation">
+                <div class="pulse"></div>
+                <div class="pulse"></div>
+                <div class="pulse"></div>
+            </div>
+            
+            <a href="https://t.me/CHATWRX" class="join-button">Войти в чат</a>
+        </div>
+        
+        <div class="footer">
+            © WRX USLUGI | Премиум доступ
+        </div>
+    </div>
+</body>
+</html>
